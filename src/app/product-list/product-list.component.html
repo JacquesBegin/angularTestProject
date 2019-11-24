@@ -12,6 +12,11 @@ can be found in the LICENSE file at http://angular.io/license
     <a [title]="product.name + ' details'">
       {{ product.name }}
     </a>
-    {{ product.name }}</h3>
+  </h3>
+
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+  
 </div>
 
